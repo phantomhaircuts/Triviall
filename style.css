@@ -1,11 +1,10 @@
-body{
+body {
   font-family: helvetica;
   background-color: #202A37;
   color: white;
   background-image: url("backgroundslice.png");
   background-position: center;
   background-repeat: no-repeat;
-  back
 }
 .time{
   align-content: center;
@@ -27,13 +26,11 @@ button {
 #timer{
   color: red;
 }
-#question {
+#question{
   display: block;
-margin: auto;
+  margin: auto;
   background-color: #50E3C2;
   border: none;
-  opacity: 0.9;
-  filter: alpha(opacity=20);
   color: white;
   font-size: 70px;
   padding: 30px;
@@ -46,7 +43,7 @@ margin: auto;
   color: red;
 }
 #start{
-  display:
+
 }
 
 div {
@@ -81,19 +78,16 @@ li {
   padding: 30px;
   font-size: 20px;
 }
-.answers{
+
+.answers {
     text-align:center;
     height:400px;
     width:600px;
 }
-#next{
-
-}
 
 footer{
-  font-family: Lucida Grande;
-  color white;
+  font-family: "Lucida Grande";
+  color: white;
   text-align: center;
   font-size: 100px;
-  opacity: 70%;
 }
