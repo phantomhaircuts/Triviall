@@ -6,7 +6,7 @@ var question= 0;
 var questionNumber= 0;
 var answer;
 //arrays of questions, answers, and solutions
-var defaultIndex = ["triv.i.al", "A","B","C","D"]
+var defaultIndex = ["triv.i.al", "A","B","C","D"];
 var questionIndex = ["What is the best selling album of all time?", "Who invented the electric guitar?", "Who won the first Rap Performance Grammy in 1989?", "Who has the longest running number one Billboard hit?", "Who holds the record for longest concert?", "What artist has the most number one Singles?", "Which artist has never had a number one song?", "Which song does not contain any samples?", "What was the first hip hop song to chart on Billboard?","What band has had the most members from start to finish?", "Good Game!"];
 var answerIndex = [["Michael Jackson's, Thriller", "The Beatles, White Album", "Britney  Spears, Baby One More Time", "Back Street Boys, Millenium"],
 ["Leo Fender", "Orville Gibson", "Adolph Rickenbacker", "Les Paul"],
@@ -74,12 +74,10 @@ $(".answer").on("click", function(){
 /////////////////////////////////////
 // next question function
 $("#next").on("click", function(){
-  var goodGame = $("#question").text;
   clearInterval(timer)
   seconds = 0
   question ++;
   questionNumber ++;
-  else {
   timer = setInterval(function(){
   seconds++;
   $("#questionNumber").text(questionNumber)
@@ -93,7 +91,6 @@ $("#next").on("click", function(){
     $("#b").text(answerIndex[question][1])
     $("#c").text(answerIndex[question][2])
     $("#d").text(answerIndex[question][3])
-    }
   }
 )
 ///////////////////////////////////////
