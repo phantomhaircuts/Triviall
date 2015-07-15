@@ -68,7 +68,11 @@ li {
 #d{
   background-color: orange;
 }
-#next{display: none;}
+#next{
+  padding: 20px;
+  margin-left: 4%;
+  display: none;
+}
 
 .answer {
   margin-top: 5px;
