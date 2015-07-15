@@ -16,7 +16,7 @@ var answerIndex = [["Michael Jackson's, Thriller", "The Beatles, White Album", "
 ["Madonna", "Janet Jackson", "The Supremes", "The Beatles"],
 ["Bruce Springsteen", "Beyonce", "Stevie Wonder", "Katy Perry"],
 ["Michael Jackson - Beat It", "Daft Punk - One More Time", "Kanye West- All of the Lights", "The Beatles - Come Together"],
-["Planet Rock - Afrika Bambaataa", "Sugarhill Gang - Rapper's Delight", "Beastie Boys - Brass Monkey"],
+["Planet Rock - Afrika Bambaataa", "Sugarhill Gang - Rapper's Delight", "Beastie Boys - Brass Monkey", "2pac - California Love"],
 ["Santana", "Guns N Roses", "AC/DC", "Oasis" ],
 ["","","",""]];
 var correctIndex = ["Michael Jackson's, Thriller", "Adolph Rickenbacker", "DJ Jazzy Jeff & the Fresh Prince", "Mariah Carey & Boyz II Men", "Gonzales", "The Beatles", "Bruce Springsteen", "Kanye West- All of the Lights", "Sugarhill Gang - Rapper's Delight", "Santana"];
@@ -58,7 +58,6 @@ $(".answer").on("click", function(){
 }
   else if (answer === ""){
     alert("good game!")
-    reset();
   }
   else {
   console.log("Wrong")

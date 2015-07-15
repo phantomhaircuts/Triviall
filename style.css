@@ -85,14 +85,15 @@ li {
     text-align:center;
     height:400px;
     width:600px;
-}}
+}
 #next{
 
 }
+
 footer{
   font-family: Lucida Grande;
   color white;
   text-align: center;
-  font-size: 150px;
+  font-size: 100px;
   opacity: 70%;
 }
