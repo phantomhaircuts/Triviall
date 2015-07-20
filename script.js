@@ -7,6 +7,26 @@ var questionNumber= 0;
 var answer;
 //arrays of questions, answers, and solutions
 var defaultIndex = ["triv.i.al", "A","B","C","D"];
+
+// You have three arrays, and you have to correlate between them by keeping track of the index
+// A better approach here would be to use an array of "question objects", like so:
+
+// var questions = [
+//   {
+//     question: "What is the best selling album of all time?",
+//     answers: ["Michael Jackson's, Thriller", "The Beatles, White Album", "Britney  Spears, Baby One More Time", "Back Street Boys, Millenium"],
+//     correctAnswer: "Michael Jackson's, Thriller"
+//   },
+//   {
+//     question: "How old am I?",
+//     answers: ["12", "14", "57", "99"],
+//     correctAnswer: "99"
+//   }
+// ]
+
+// I suspect this would make your code much easier to read, and easier to add more questions!
+
+
 var questionIndex = ["What is the best selling album of all time?", "Who invented the electric guitar?", "Who won the first Rap Performance Grammy in 1989?", "Who has the longest running number one Billboard hit?", "Who holds the record for longest concert?", "What artist has the most number one Singles?", "Which artist has never had a number one song?", "Which song does not contain any samples?", "What was the first hip hop song to chart on Billboard?","What band has had the most members from start to finish?", "Good Game!"];
 var answerIndex = [["Michael Jackson's, Thriller", "The Beatles, White Album", "Britney  Spears, Baby One More Time", "Back Street Boys, Millenium"],
 ["Leo Fender", "Orville Gibson", "Adolph Rickenbacker", "Les Paul"],
@@ -24,6 +44,7 @@ var correctIndex = ["Michael Jackson's, Thriller", "Adolph Rickenbacker", "DJ Ja
 $( document ).ready(function() {
 /////////////////////////////////////
 //start game.
+// everything inside this function should be indented 1 level
 $("#start").on("click", function(){
 //load question
   $("#start").css("display", "none")
@@ -72,6 +93,8 @@ $(".answer").on("click", function(){
 
 /////////////////////////////////////
 // next question function
+
+// this code has a lot in common with your 'start' code, could you extract them into a function and reuse it?
 $("#next").on("click", function(){
   clearInterval(timer)
   seconds = 0
@@ -94,6 +117,9 @@ $("#next").on("click", function(){
 )
 ///////////////////////////////////////
 //reset button
+
+// also see some duplication below regarding rendering the first question, again, try to reduce duplication of code whereever possible! Lets
+// talk about this during our next one-on-one.
 $("#reset").on("click", function reset (){
 $("#start").css("display", "inline")
 clearInterval(timer)

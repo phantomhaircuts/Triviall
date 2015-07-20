@@ -1,3 +1,5 @@
+/* In general, try to be more consistent with whitespace. e.g. separate each selector
+rule set with a new line in between (you do it sometimes, but not all the time)*/
 body {
   font-family: helvetica;
   background-color: #202A37;
@@ -5,7 +7,7 @@ body {
   background-image: url("backgroundslice.png");
   background-position: center;
   background-repeat: no-repeat;
-}
+} /* e.g. I'd add a new line below*/
 .time{
   align-content: center;
 }
@@ -53,6 +55,9 @@ div {
 li {
   display: inline;
 }
+
+/* try to keep your styles organized in terms of order. these styles modify butttons, so I'd
+keep them near the button styles above */
 #a{
   background-color: blue;
 }
